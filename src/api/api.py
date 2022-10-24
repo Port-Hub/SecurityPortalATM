@@ -20,7 +20,7 @@ def cctvframes():
                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
 def atmframes():
-    camera = cv2.VideoCapture(1)
+    camera = cv2.VideoCapture(0)
     while True:
         success, frame = camera.read()
         if not success:

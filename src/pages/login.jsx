@@ -40,21 +40,21 @@ const Login = () => {
             </div>
             <div className="flex flex-row items-center gap-x-2">
                 <FontAwesomeIcon icon={faPeopleGroup} />
-                <input className=" placeholder:text-sky-900 bg-transparent border-2 p-2 rounded-xl" type="name" placeholder="Username"></input>
+                <input className=" placeholder:text-sky-200 bg-transparent border-2 p-2 rounded-xl" type="name" placeholder="Username"></input>
             </div>
             <div className="flex flex-row gap-x-2 items-center">
                 <FontAwesomeIcon icon={faKey} />
-                <input className=" placeholder:text-sky-900 bg-transparent border-2 p-2 rounded-xl" type="password" placeholder="Password"></input>
+                <input className=" placeholder:text-sky-200 bg-transparent border-2 p-2 rounded-xl" type="password" placeholder="Password"></input>
             </div>
             <div className="flex flex-row gap-x-2 items-center">
                 <FontAwesomeIcon icon={faCamera} />
-                <select ref={mRef} onChange={mChange}  className=" placeholder:text-sky-900 bg-transparent w-full border-2 p-2 rounded-xl" type="radio">
+                <select ref={mRef} onChange={mChange}  className=" placeholder:text-sky-200 bg-transparent w-full border-2 p-2 rounded-xl" type="radio">
                     <option>{mList[0].name}</option>
                     <option>{mList[1].name}</option>
                 </select>
             </div>
             <div className="flex flex-row text-center">
-                <Link to={mode.link} className="rounded-lg w-full py-2 px-6 bg-sky-300">Login</Link>
+                <Link to={mode.link} className="rounded-lg w-full py-2 px-6 bg-[#050505]">Login</Link>
             </div>
         </Layout>
     )
