@@ -8,10 +8,12 @@ import cv2
 import numpy as np
 
 app = Flask("Flaskend")
+sus_index = 0
 
 # camera = cv2.VideoCapture('rtsp://freja.hiof.no:1935/rtplive/_definst_/hessdalen03.stream')
 # for cctv camera use rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' instead of camera
 # for local webcam use cv2.VideoCapture(0)
+
 def timepeopleCounter():
     face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
     eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
@@ -56,6 +58,7 @@ def timepeopleCounter():
                     print(str(Min) + " Minute")
 
                 if Min == 2:
+                    sus_index +=1
                     print("Alert")
                     if Check == 1:
                         print("Suspicious activity detected inside ATM.")
@@ -64,6 +67,7 @@ def timepeopleCounter():
             if len(faces) > 2 and Counter == 1:
                 print("Suspicious activity detected inside ATM.")
                 Counter += 1
+                sus_index +=1
 
                         
             if len(faces) == 0:
