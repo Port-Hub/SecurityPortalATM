@@ -2,12 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=640, user-scalable=no" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"
+        integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/async/3.2.0/async.min.js"
+        integrity="sha512-6K6+H87tLdCWvY5ml9ZQXLRlPlDEt8uXmtELhuJRgFyEDv6JvndWHg3jadJuBVGPEhhA2AAt+ROMC2V7EvTIWw=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.roboflow.com/0.2.22/roboflow.js"></script>
+    <meta name="viewport" content="width=640, user-scalable=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATM Security System</title>
   </head>
-  <body class="bg-[#0a1a2c] text-blue-200">
-    <div id="root"></div>
+  
+  <body class="bg-[#0a1a2c] text-blue-200 loading">
+    
+    <div id="root">
+      
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+  <body class="loading">
+    <video id="video" autoplay muted playsinline></video>
+    <div id="fps"></div>
+  </body>
 </html>
+  
