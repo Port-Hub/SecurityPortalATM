@@ -1,6 +1,5 @@
  
 const Anomaly = (props) => {
-/*jshint esversion:6*/
 
 $(function () {
     const video = $("video")[0];
@@ -198,6 +197,11 @@ $(function () {
     };
     
 });
-
+    return (
+        <>
+            <video id="video" autoplay muted playsinline></video>
+            <div id="fps"></div>
+        </>
+    )
 }
 export default Anomaly
