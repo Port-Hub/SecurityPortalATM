@@ -8,11 +8,11 @@ const Login = () => {
 
     const mList = [
         {
-            "name": "ATM Camera",
+            "name": "Camera 1",
             "link": "atmcam"
         },
         {
-            "name": "CCTV Camera",
+            "name": "Camera 2",
             "link": "cctv"
         }
     ]

@@ -1,16 +1,14 @@
 import Layout from "../components/layout"
 import { Link } from "react-router-dom"
+import Anomaly from "./anomaly"
+
 const CCTV = () => {
     return(
-        <Layout>
-            <div>
-                <h3 className="text-2xl text-center">CCTV Camera</h3>
-            </div>
-            <img src="http://localhost:5000/cctv"/>
+        <div className="bg-[#FDEEDC]">
             <div className="flex flex-row text-center">
-                <Link to="/" className="rounded-lg w-full py-2 px-6 bg-[#050505]">Log out</Link>
+                <Anomaly/>
             </div>
-        </Layout>
+        </div>
     )
 }
 

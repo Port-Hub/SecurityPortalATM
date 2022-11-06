@@ -26,8 +26,8 @@ $(function () {
 
     var publishable_key = "rf_r1n4zUmWasOBxLrr5GThU3hcZ163";
     var toLoad = {
-        model: "weapondetection-mgxpu",
-        version: 3
+        model: "weapondetection-pmx4d",
+        version: 2
     };
 
     const loadModelPromise = new Promise(function (resolve, reject) {
@@ -198,10 +198,10 @@ $(function () {
     
 });
     return (
-        <>
+        <div className="container mx-auto">
             <video id="video" autoplay muted playsinline></video>
             <div id="fps"></div>
-        </>
+        </div>
     )
 }
 export default Anomaly
