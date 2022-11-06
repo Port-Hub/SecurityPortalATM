@@ -13,7 +13,7 @@ const Layout = (props) => {
         </div> */}
       </div>
 
-      <form className=" bg-[#ff5b35] space-y-8 rounded-2xl p-20 drop-shadow-xl    ">
+      <form className=" bg-[#ff5b35] space-y-8 rounded-2xl p-20 drop-shadow-xl">
         {props.children}
       </form>
     </div>
