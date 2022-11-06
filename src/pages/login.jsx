@@ -36,19 +36,19 @@ const Login = () => {
     return(
         <Layout>
             <div>
-                <h3 className="text-2xl text-center">Security Login</h3>
+                <h3 className="text-3xl text-center text-[#FDEEDC]">Security Login</h3>
             </div>
             <div className="flex flex-row items-center gap-x-2">
                 <FontAwesomeIcon icon={faPeopleGroup} />
-                <input className=" placeholder:text-sky-200 bg-transparent border-2 p-2 rounded-xl" type="name" placeholder="Username"></input>
+                <input className=" placeholder:text-[#FFD8A9] bg-transparent border-2 p-2 rounded-xl" type="name" placeholder="Username"></input>
             </div>
             <div className="flex flex-row gap-x-2 items-center">
                 <FontAwesomeIcon icon={faKey} />
-                <input className=" placeholder:text-sky-200 bg-transparent border-2 p-2 rounded-xl" type="password" placeholder="Password"></input>
+                <input className=" placeholder:text-[#FFD8A9] bg-transparent border-2 p-2 rounded-xl" type="password" placeholder="Password"></input>
             </div>
             <div className="flex flex-row gap-x-2 items-center">
                 <FontAwesomeIcon icon={faCamera} />
-                <select ref={mRef} onChange={mChange}  className=" placeholder:text-sky-200 bg-transparent w-full border-2 p-2 rounded-xl" type="radio">
+                <select ref={mRef} onChange={mChange}  className=" placeholder:text-[#FFD8A9] bg-transparent w-full border-2 p-2 rounded-xl" type="radio">
                     <option>{mList[0].name}</option>
                     <option>{mList[1].name}</option>
                 </select>
