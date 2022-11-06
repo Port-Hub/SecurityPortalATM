@@ -68,7 +68,7 @@ def analysis():
 
             if len(faces) > 0:
 
-                Sec += 1
+                Sec += 0.1
                 last_time=Sec
                 print(str(Min) + " Mins " + str(Sec) + " Sec ")
 
@@ -77,7 +77,7 @@ def analysis():
                 cv2.putText(frame, "Number of faces detected: " + str(
                     faces.shape[0]), (0, frame.shape[0] - 10), cv2.FONT_HERSHEY_TRIPLEX, 0.5,  (0, 0, 255), 1)
 
-                time.sleep(1)
+                time.sleep(0.1)
                 if Sec == 60:
                     Sec = 0
                     Min += 1
@@ -101,9 +101,9 @@ def analysis():
             if len(faces) == 0:
                 # no one is using the atm/bank
                 print('No face detected')
-                if(last_time!=0):
+                if(last_time>=2 ):
                     avg_mood = max(set(overall_mood), key=overall_mood.count)
-                    row=[[last_time,"State of Atm","Coustomer details",avg_mood,sus_index]]
+                    row=[[int(last_time),"State of Atm","Coustomer details",avg_mood,sus_index]]
                     filename = "moodanalytics.csv"
                     with open(filename, 'a') as csvfile: 
                         # writing in the csv file for further data analytics

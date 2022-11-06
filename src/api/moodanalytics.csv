@@ -1,15 +1,21 @@
 Session time, State of ATM (From ATM Machine), Coustomer details(From Bank Database using card details) ,Overall mood,Suspicion index
-13,State of Atm,Coustomer details,Neutral
 
-2,State of Atm,Coustomer details,Sad
+7,State of Atm,Coustomer details,Neutral,0
 
-8,State of Atm,Coustomer details,Neutral
+2,State of Atm,Coustomer details,Happy,0
 
-7,State of Atm,Coustomer details,Neutral
+5,State of Atm,Coustomer details,Happy,0
 
-1,State of Atm,Coustomer details,Sad
+3,State of Atm,Coustomer details,Happy,0
 
-8,State of Atm,Coustomer details,Sad
+3,State of Atm,Coustomer details,Happy,0
 
-2,State of Atm,Coustomer details,Sad
+3,State of Atm,Coustomer details,Happy,0
 
+2,State of Atm,Coustomer details,Happy,0
+
+8,State of Atm,Coustomer details,Sad,0
+
+2,State of Atm,Coustomer details,Neutral,0
+3,State of Atm,Coustomer details,Happy,0
+3,State of Atm,Coustomer details,Happy,0
